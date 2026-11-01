@@ -289,3 +289,136 @@
 //         System.out.println(ch);
 //     }
 // }
+
+
+// // input s = 'javadev' replace all the vowels to '_' present in the String output s = 'j_v_d_v'.
+// class StringBasics{
+//     public static void main(String[] args) {
+//         String s = "javadev";
+//         char[] ch = s.toCharArray();
+//         int count = 0;
+//         for(int i = 0;i<s.length();i++){
+//             if(ch[i]=='a'||ch[i]=='e'||ch[i]=='i'||ch[i]=='o'||ch[i]=='u'){
+//                 count++;     
+//             }     
+//         }
+//         for(int i = 0;i<s.length();i++){
+//              if((ch[i]=='a'||ch[i]=='e'||ch[i]=='i'||ch[i]=='o'||ch[i]=='u')&&(count>=3)){     
+//                 ch[i]='_';     
+//             }      
+//         }   
+//         System.out.println(ch);
+//     }
+// }
+
+
+
+// input- java, output- aa 
+// public class StringBasics{
+//    public static void main(String[] args) {
+//     String s = "javadeveloper";
+//     String newString = "";
+//     char[] ch = s.toCharArray();
+//     for(int i=0;i<=s.length();i++){
+//         for(int j=i+1;j<s.length();j++){
+//             if(ch[i]==ch[j]){
+//                newString+=ch[j];
+//             }
+//         }
+//     }
+//     System.out.println(newString);
+//    }
+// }
+
+
+
+//************** */
+// //wajp to occurance repeated char. 
+
+// class StringBasics{
+//     public static void main(String[] args) {
+//         String s = "Ramana kumar";
+//         char[] ch = s.toCharArray();
+        
+//         for(int i = 0;i<s.length();i++){
+//             if(ch[i]>='0'&&ch[i]<='9') continue;
+//             char count = '1';
+//             for(int j= i+1;j<s.length();j++){
+//                 if(ch[i]==ch[j]){
+                  
+//                   ch[j]= ++count;
+//                 }
+//                 if(count >'1'){
+//                     ch[i]='1';
+//                 }    
+//             }            
+//         }       
+//       System.out.println(ch);              
+//     }    
+// }
+
+
+//******************** */
+// //Wajp to make a String as initCap Formate. input- "java is easy" , output- "Java Is Easy"; 
+
+// class StringBasics{
+//     public static void main(String[] args) {
+//         String s = "Java is Easy";
+//         char[] ch = s.toCharArray();
+//         for(int i = 0;i<s.length();i++){
+//             if(ch[i]>='a'&&ch[i]<='z'){
+//                if(i==0||ch[i-1]==' '){
+//                 ch[i]-=32;
+//             }
+//             }
+            
+//         }
+//         System.out.println(ch);
+//     }
+// }
+
+
+//************ */
+// // WAJP to encode and decode for a given String.
+// class StringBasics{
+//     public static void main(String[] args) {
+//        System.out.println(encode("abc",2)); //cde
+//        System.out.println(decode("cde",2)); //abc
+//     }
+//     public static String encode(String s,int n){
+//         char[] ch = s.toCharArray();
+//         for(int i=0;i<s.length();i++){
+//            if(ch[i]>='a'&& ch[i]<='z')
+//             ch[i] = (char)(((((ch[i]+n-'a')%26)+26)%26)+'a');
+//            else if(ch[i]>= 'A' && ch[i] <= 'Z')
+//             ch[i] = (char)(((((ch[i]+n-'A')%26)+26)%26)+'A');
+//         }
+//         return new String(ch);
+//     }
+//      public static String decode(String s,int n){
+//         return encode(s,-n);
+//      }
+// }
+
+
+
+
+// // Arrange the characters in ascending order for a given String.
+// public class StringBasics{
+//    public static void main(String[] args) {
+//     String s = "azamu";
+//     char[] ch =  s.toCharArray();
+//     for(int i=0;i<=s.length();i++){
+//         for(int j=i+1;j<s.length();j++){
+//             if(ch[i]>ch[j]){
+//                 char temp = ch[i];
+//                 ch[i] = ch[j];
+//                 ch[j] = temp;
+//             }
+//         }
+//    }
+//    System.out.println(ch);
+// }
+// }
+
+
