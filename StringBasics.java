@@ -422,3 +422,67 @@
 // }
 
 
+// // Arrange the characters in descending order for a given String.
+// public class StringBasics{
+//    public static void main(String[] args) {
+//     String s = "azamu";
+//     char[] ch =  s.toCharArray();
+//     for(int i=0;i<=s.length();i++){
+//         for(int j=i+1;j<s.length();j++){
+//             if(ch[i]<ch[j]){
+//                 char temp = ch[i];
+//                 ch[i] = ch[j];
+//                 ch[j] = temp;
+//             }
+//         }
+//    }
+//    System.out.println(ch);
+// }
+// }
+
+
+//************* */
+// // SearchIndex for a given String and key.
+// public class StringBasics{
+//    public static void main(String[] args) {
+//     System.out.println(find("Raju",'j'));
+//    } 
+//    public static int find(String s,char key){
+//     for(int i=0;i<s.length();i++){
+//         if(s.charAt(i)==key) return i;
+//     }
+//     return -1;
+//    }
+// }
+
+
+// //******************* */
+// // wajp to remove duplicates using functions
+// public class StringBasics{
+//     public static void main(String[] args) {
+//         String s = "javadev";
+//         String res = "";
+//         for(int i=0;i<s.length();i++){
+//            char ch = s.charAt(i);
+//            if(!res.contains(ch+"")){
+//             res += ch;
+//            }
+//         }
+//         System.out.println(res);
+//     }
+// }
+
+
+
+// public class StringBasics{
+//     public static void main(String[] args) {
+//         String s = "javadev";
+//         String newString = "";
+//         for(int i = 0;i<s.length();i++){
+//             if(!newString.contains(s.charAt(i)+""))
+//                 newString += s.charAt(i);
+//         }
+//         System.out.println(newString);
+//     }
+// }
+
