@@ -486,3 +486,207 @@
 //     }
 // }
 
+//****************** */
+//check given string is panagram or not.
+// public class StringBasics {
+//     public static void main(String[] args) {
+//         String s = "A Quick Brown Fix Jumps Over The Lazy Dog";
+//         System.out.println(isPanagram(s));
+//     }
+//     public static boolean isPanagram(String s){
+//         if(s.length()<26){
+//             return false;
+//         }
+//         s=s.toLowerCase();
+//         for(char ch='a';ch<='z';ch++){
+//             if(!s.contains(ch+"")){
+//                 return false;
+//             }
+//         }
+//         return true;
+//     }
+
+// }
+
+
+//assignment
+// public class StringBasics{
+//     public static void main(String[] args) {
+//         String vowels = "AEIOUaeiou";
+//         String input = "AM Indian";
+//         String newString = "";
+//         for(int i=0;i<input.length();i++){
+//            char ch = input.charAt(i);
+//            for(int j=0;j<vowels.length();j++){
+//             if(ch==vowels.charAt(j)){
+//                newString+=ch;
+//             }
+//            }
+//         }
+//         System.out.println(newString);
+//     }
+// }
+
+
+
+// PERMUTAIONS FOR A GIVEN STRING.
+
+// class StringBasics{
+//     public static void main(String[] args) {
+//         String s = "abc";
+//         permutation(s,0,s.length()-1);
+//     }
+//     public static void permutation(String s,int st,int end){
+//         if(st==end){
+//             System.out.println(s);
+//             return;
+//         }
+//         for(int i=st;i<=end;i++){
+//             String s1 = swap(s,st,i);
+//             permutation(s1,st+1,end);   
+//         }
+//     }
+//     public static String swap(String s, int i, int j){
+//         char[] ch = s.toCharArray();
+//         char temp = ch[i];
+//         ch[i] =  ch[j];
+//         ch[j] = temp;
+//         return new String(ch);
+//     }
+// }
+
+//************ */
+// //SPTLIT METHOD-->
+
+// class StringBasics{
+//     public static void main(String[] args) {
+//         String s = "java is very very easy";
+//         String res = "";
+//         String[] str = s.split(" ");
+//         for(int i=str.length-1;i>=0;i--)
+//             res += str[i] + " ";
+//             System.out.println(res.trim());
+        
+//     }
+// }
+
+
+// // //SPTLIT METHOD-->
+// //**************** */
+// class StringBasics{
+//     public static void main(String[] args) {
+//         String s = "java is easy";
+//         String res = "";
+//         String[] str = s.split(" ");
+//         for(int i=str.length-1;i>=0;i--){
+//             res += reverse(str[i]+" ");
+//         }
+//         System.out.println(res.trim());        
+//     }
+    
+//     public static String reverse(String s){
+//         String rev = "" ;
+//         for(int i=s.length()-1;i>=0;i--){
+//             rev += s.charAt(i);
+//         }
+//         return rev;
+
+//     }
+// }
+
+
+
+//********* */
+// // wajp to print all palindrom words in a given String.
+// // input- madam sir madam anthea. output- madam madam
+
+// public class StringBasics{
+//     public static void main(String[] args) {
+//         String s = "madam sir madam anthea";
+//         String res = "";
+//         String[] strArr = s.split(" ");
+//         for(int i=0;i<strArr.length;i++){
+//             if(ispalindrom(strArr[i])==true){
+//                res += (strArr[i]+" ");
+//             }
+//         }
+//         System.out.println(res);
+//     }
+//     public static boolean ispalindrom(String s){  
+//        int j= s.length()-1;
+//        for(int i = 0;i<s.length();i++){
+//           if(s.charAt(i)!=s.charAt(j)){
+//             return false;
+//           }       
+//           j--;
+//        }
+//        return true;
+//     }
+// }
+
+
+// public class StringBasics{
+//     public static void main(String[] args) {
+//         String s = "madam knows only malayalam";
+//         String res ="";
+//         String[] strArr = s.split(" ");
+//         for(int i=0;i<strArr.length;i++){
+//             if(ispalindrom(strArr[i])==true){
+//                 res += (strArr[i]+" ");
+//             }
+//         }
+//         String[] newStrArr =res.split(" ");
+//         String answer = "";
+//         for(int i = 0;i<newStrArr.length;i++){
+//         if(newStrArr[i].length()>answer.length()){
+//                  answer=newStrArr[i];
+//         }
+//     }
+//         System.out.println(answer);
+//     } 
+//     public static boolean ispalindrom(String s){  
+//        int j= s.length()-1;
+//        for(int i = 0;i<s.length();i++){
+//           if(s.charAt(i)!=s.charAt(j)){
+//             return false;
+//           }       
+//           j--;
+//        }
+//        return true;
+//     }
+    
+// }
+
+
+
+
+// public class StringBasics{
+//     public static void main(String[] args) {
+//         String s = "malayalam knows only madam";
+//         String res ="";
+//         int max=Integer.MIN_VALUE;
+//         String[] strArr = s.split(" ");
+//         for(int i=0;i<strArr.length;i++){
+//                if (ispalindrom(strArr[i])){
+//                     int v=strArr[i].length();
+//                     if(v>max){
+//                     max=v;
+//                     res=strArr[i];
+//                     }
+//                 }
+//         }
+//        System.out.println(res);
+//     }
+
+//     public static boolean ispalindrom(String s){  
+//        int j= s.length()-1;
+//        for(int i = 0;i<s.length();i++){
+//           if(s.charAt(i)!=s.charAt(j)){
+//             return false;
+//           }       
+//           j--;
+//        }
+//        return true;
+//     }
+    
+// }
