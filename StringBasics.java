@@ -690,3 +690,151 @@
 //     }
     
 // }
+
+
+
+// class StringBasics{
+//     public static void main(String[] args) {
+//         String s = "O my dear Happyness Happy Happy Birthdat to you";
+//         String [] arrStr = s.split(" ");
+
+//         String res = "";
+//         for(int i = 0;i<arrStr.length;i++){
+//             if(arrStr[i]=="")continue;
+//            for(int j=i+1;j<arrStr.length;j++){
+//             if(arrStr[i].equals(arrStr[j])){
+//                 arrStr[j]="";
+//             }
+           
+//            }
+//            res+=arrStr[i]+" ";
+           
+//         }
+//          System.out.println(res.trim());
+        
+//     }
+// }
+
+
+// wajp to 
+
+// public class StringBasics{
+//     public static void main(String[] args) {
+//         String s = "java is very very easy java";
+//         String [] arrStr = s.split(" ");
+
+       
+//         for(int i = 0;i<arrStr.length;i++){
+//             if(arrStr[i]=="")continue;
+//             int count = 1;
+//             for(int j=i+1;j<arrStr.length;j++){
+//                 if(arrStr[i].contains(arrStr[j])){
+//                     count++;
+//                     arrStr[j]="";
+//                 }
+//             }
+//             System.out.println(arrStr[i]+":"+count);
+//         }
+        
+//     }
+// }
+
+
+// // WAJP to check given two Strings are Anagram or not.
+// //******//
+
+// class StringBasics{
+//     public static void main(String[] args) {
+//         String s1 = "Keep";
+//         String s2 = "Peek";
+//         s1=s1.toLowerCase();
+//         s2=s2.toLowerCase();
+//         System.out.println(isPanagram(s1,s2));
+        
+//     }
+//     public static boolean isPanagram(String s1, String s2){
+        
+//         if(s1.length()!=s2.length()){
+//             return false;
+//         }
+//         if(s1.length()==0&&s2.length()==0){
+//             return true;
+//         }
+//         char ch = s1.charAt(0);
+//         return isPanagram(s1.replace(ch+"", ""), s2.replace(ch+"", ""));
+         
+
+//     }
+// }
+
+
+// // WAJP to each occurence in a given String.
+// public class StringBasics{
+//     public static void main(String[] args) {
+//         String s1 = "javadev";
+//         String s2 = "";
+//         while(s1.length()>0){
+//             char ch = s1.charAt(0);
+//             s2=s1.replace(ch+"", "");
+//             System.out.println(ch+"="+(s1.length()-s2.length()));
+//             s1=s2;
+//         }
+//     }
+// }
+
+
+
+
+// // Wajp to print max no of occurence character for a given String.
+// class StringBasics{
+//     public static void main(String[] args) {
+//         String s1 = "aaabbabaabcaab";
+//         String s2="";
+//         int max = Integer.MIN_VALUE;
+//         char maxChar = ' ';
+//         while(s1.length()>0){
+//             char ch = s1.charAt(0);
+//             s2 = s1.replace(ch+"", "");
+//             int count = s1.length()-s2.length();
+//             if(count>max){
+//                 max=count;
+//                 maxChar = ch;
+//             }
+//             System.out.println(ch+"="+count);
+//             s1=s2;
+//         }
+//         System.out.println(maxChar+"="+max);
+//     }
+// }
+
+
+
+// Wajp to print all the possible substring of length 3.
+
+// //WAJP to print the all palindrome String in a given String.
+
+// class StringBasics{
+//    public static void main(String[] args) {
+//      String s = "malayalam";
+//      for(int i = 0;i<s.length();i++){
+//         for(int j=i+3;j<s.length();j++){
+//             if(isPalindrome(s.substring(i,j))){
+//                System.out.println(s.substring(i,j));
+//             }
+//         }
+
+//      }
+//    }
+//    public static boolean isPalindrome(String s){
+//     int i = 0;
+//     int  j = s.length()-1;
+//      while(i<j){
+//         if(s.charAt(i)!=s.charAt(j)){
+//             return false;
+//         }
+//         i++;
+//             j--;
+//      }
+//      return true;
+//    }
+// }
