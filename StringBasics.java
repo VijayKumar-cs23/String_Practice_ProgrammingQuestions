@@ -838,3 +838,103 @@
 //      return true;
 //    }
 // }
+
+
+//*************** */
+// //WAJP to print the biggest palindrome String in a given String.
+
+// class StringBasics{
+//    public static void main(String[] args) {
+//      String s = "malayalam";
+//      String biggestString = "";
+//      for(int i = 0;i<s.length();i++){
+//         for(int j=i+3;j<s.length();j++){
+//             String str= s.substring(i,j);
+//             if(isPalindrome(str)){
+                
+//                if(str.length()>biggestString.length()){
+//                 biggestString=str;
+                
+//                }
+               
+//             }
+            
+//         }
+
+//      }
+//      System.out.println(biggestString);
+//    }
+//    public static boolean isPalindrome(String s){
+//     int i = 0;
+//     int  j = s.length()-1;
+//      while(i<j){
+//         if(s.charAt(i)!=s.charAt(j)){
+//             return false;
+//         }
+//         i++;
+//             j--;
+//      }
+//      return true;
+//    }
+// }
+
+
+// //WAJP to print the Smallest palindrome String in a given String.
+
+// class StringBasics{
+//    public static void main(String[] args) {
+//      String s = "malayalam";
+//      String smallestString = s;
+//      for(int i = 0;i<s.length();i++){
+//         for(int j=i+3;j<s.length();j++){
+//             String str= s.substring(i,j);
+//             if(isPalindrome(str)){
+                
+//                if(str.length()<smallestString.length()){
+//                 smallestString=str;
+                
+//                }
+               
+//             }
+            
+//         }
+
+//      }
+//      System.out.println(smallestString);
+//    }
+//    public static boolean isPalindrome(String s){
+//     int i = 0;
+//     int  j = s.length()-1;
+//      while(i<j){
+//         if(s.charAt(i)!=s.charAt(j)){
+//             return false;
+//         }
+//         i++;
+//             j--;
+//      }
+//      return true;
+//    }
+// }
+
+
+// // ************//
+// // WAJP to swap the two given Strings without using third Variable.
+
+// class StringBasics{
+//     public static void main(String[] args) {
+//         String s1="Ram";
+//         String s2 = "Sita";
+//         System.out.println("before swapping:");
+//         System.out.println("s1="+s1);
+//         System.out.println("s2="+s2);
+
+//         s1 = s1+s2;
+//         s2=s1.substring(0,s1.length()-s2.length());
+//         s1=s1.substring(s2.length());
+//         System.out.println("s1="+s1);
+//         System.out.println("s2="+s2);
+        
+     
+
+//     }
+// }
